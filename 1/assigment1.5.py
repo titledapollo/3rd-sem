@@ -1,0 +1,5 @@
+principal= int(input("enter the value of principle"))
+rate= int(input("enter the value of rate"))
+time= int(input("enter the value of time"))
+interest=(principle * rate * time)
+print("the simple interest is:",interest)

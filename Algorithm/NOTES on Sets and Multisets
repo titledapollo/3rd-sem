@@ -1,0 +1,21 @@
+NOTES on Sets and Multisets: Sets and multisets are fundamental data structures used in algorithms, differing primarily in their handling of duplicate elements.
+Sets:
+A set is a collection of unique elements, meaning no two elements within a set can be identical. When an attempt is made to insert a duplicate element into a set, it is typically ignored or the set remains unchanged. Sets are often used when the presence or absence of an element is the primary concern, and the frequency of occurrence is not relevant.
+Key properties:
+Stores unique elements.
+Elements are often stored in a sorted order (e.g., std::set in C++).
+Operations like insertion, deletion, and searching usually have logarithmic time complexity (e.g., O(log n) for balanced tree implementations).
+Algorithmic applications:
+Storing unique identifiers (e.g., user IDs, product codes).
+Checking for membership (e.g., if element in my_set).
+Finding distinct elements in a collection.
+Multisets:
+A multiset, also known as a bag, is a collection of elements that can contain duplicates. In a multiset, the frequency of each element is significant. When an element is inserted, its count within the multiset increases.
+Key properties:
+Allows duplicate elements.
+Elements are often stored in a sorted order (e.g., std::multiset in C++).
+Operations like insertion, deletion, and searching usually have logarithmic time complexity (e.g., O(log n) for balanced tree implementations).
+Algorithmic applications:
+Counting element occurrences (e.g., frequency analysis, histograms).
+Storing and processing collections where the number of times an element appears matters (e.g., a list of items in an order where multiple of the same item can be present).
+Implementing priority queues where multiple elements can have the same priority.

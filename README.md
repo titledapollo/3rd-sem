@@ -1,2 +1,2 @@
 
-in folder " 3rd-sem/tree/notes " contains few notes on 3rd sem
+in folder " 3rd-sem/tree/notes " contains few notes of 3rd sem

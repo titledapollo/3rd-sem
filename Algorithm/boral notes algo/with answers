@@ -1,0 +1,356 @@
+Below are **proper, exam-oriented answers for ALL UNITS (Unit-1 to Unit-4)** of **Algorithms – 3rd Semester (WBSCTE Diploma)**, written in **clear, structured, and scoring format**.
+You can write these directly in the examination.
+
+---
+
+## **UNIT–1: Fundamentals of Algorithms**
+
+### **1. What is an Algorithm?**
+
+An algorithm is a **finite sequence of well-defined steps** used to solve a problem or perform a computation.
+
+**Characteristics:**
+
+* Input
+* Output
+* Definiteness
+* Finiteness
+* Effectiveness
+
+---
+
+### **2. Difference between Set and Multiset**
+
+| Set                   | Multiset                   |
+| --------------------- | -------------------------- |
+| No duplicate elements | Duplicate elements allowed |
+| Order not important   | Order not important        |
+| Example: {1,2,3}      | Example: {1,1,2,3}         |
+
+---
+
+### **3. Pseudocode of PUSH and POP (Stack)**
+
+**PUSH Operation**
+
+```
+if TOP = MAX-1
+  print "Overflow"
+else
+  TOP = TOP + 1
+  STACK[TOP] = ITEM
+```
+
+**POP Operation**
+
+```
+if TOP = -1
+  print "Underflow"
+else
+  ITEM = STACK[TOP]
+  TOP = TOP - 1
+```
+
+---
+
+### **4. Big-Oh (O) Notation**
+
+Big-Oh notation represents the **upper bound** of an algorithm’s time complexity.
+
+**Example:**
+Linear search → **O(n)**
+
+---
+
+### **5. Time Complexity & Importance**
+
+Time complexity measures the **execution time growth** of an algorithm with input size.
+
+**Importance:**
+
+* Compare algorithms
+* Optimize performance
+* Predict execution time
+
+---
+
+### **6. Omega (Ω) and Theta (Θ) Notations**
+
+* **Ω (Omega):** Best-case complexity
+* **Θ (Theta):** Average-case complexity
+
+**Example:**
+Binary Search → Θ(log n)
+
+---
+
+### **7. Difference between Stack and Queue**
+
+| Stack    | Queue           |
+| -------- | --------------- |
+| LIFO     | FIFO            |
+| Push/Pop | Enqueue/Dequeue |
+| One end  | Two ends        |
+
+---
+
+### **8. Data Abstraction**
+
+Data abstraction hides implementation details and shows only essential features.
+
+**Example:** Stack ADT
+
+---
+
+### **9. Divide and Conquer**
+
+A technique that divides a problem into sub-problems, solves them, and combines results.
+
+**Example:** Merge Sort
+
+---
+
+### **10. Dynamic Programming**
+
+An optimization technique that solves problems by storing sub-problem results.
+
+**Example:** Fibonacci series
+
+---
+
+## **UNIT–2: Sorting**
+
+### **1. Selection Sort Algorithm**
+
+Steps:
+
+1. Find smallest element
+2. Swap with first position
+3. Repeat for remaining list
+
+**Worst-case Time Complexity:** O(n²)
+
+---
+
+### **2. Linear Sort**
+
+Sorting in linear time.
+
+**Limitation:** Works only for specific data ranges
+
+**Example:** Counting Sort
+
+---
+
+### **3. Merge Sort**
+
+Uses divide and conquer technique.
+
+**Time Complexity:** O(n log n)
+
+---
+
+### **4. Bubble Sort Algorithm**
+
+```
+for i = 0 to n-1
+  for j = 0 to n-i-1
+    if A[j] > A[j+1]
+      swap
+```
+
+---
+
+### **5. Insertion Sort**
+
+Inserts elements into correct position.
+
+**Time Complexity:** O(n²)
+
+---
+
+### **6. Stable Sorting**
+
+A sorting technique is stable if **equal elements retain their order**.
+
+---
+
+### **7. Insertion Sort vs Merge Sort**
+
+* Insertion: O(n²)
+* Merge: O(n log n) → **More efficient**
+
+---
+
+### **8. Comparison of Sorting Algorithms**
+
+| Algorithm | Time       | Space    | Stable |
+| --------- | ---------- | -------- | ------ |
+| Bubble    | O(n²)      | O(1)     | Yes    |
+| Selection | O(n²)      | O(1)     | No     |
+| Insertion | O(n²)      | O(1)     | Yes    |
+| Merge     | O(n log n) | O(n)     | Yes    |
+| Quick     | O(n log n) | O(log n) | No     |
+| Heap      | O(n log n) | O(1)     | No     |
+
+---
+
+### **9. Quick Sort**
+
+Uses partitioning around a pivot.
+
+**Worst case:** O(n²)
+**Average case:** O(n log n)
+
+---
+
+## **UNIT–3: Searching**
+
+### **1. Hashing**
+
+A technique to map data to fixed-size values using hash functions.
+
+**Importance:** Fast searching and retrieval
+
+---
+
+### **2. Hash Table & Hash Function**
+
+* Hash table stores data
+* Hash function generates index
+
+**Example:** h(k) = k mod 10
+
+---
+
+### **3. Chaining Method**
+
+Collision resolution technique using linked lists.
+
+---
+
+### **4. Collision Resolution Techniques**
+
+* Chaining
+* Linear probing
+* Quadratic probing
+* Double hashing
+
+---
+
+### **5. Collision**
+
+Occurs when two keys generate same hash value.
+
+---
+
+### **6. Recursive Binary Search**
+
+```
+if low <= high
+  mid = (low+high)/2
+  if key == A[mid]
+    return mid
+```
+
+**Time Complexity:** O(log n)
+**Unsorted array:** Not applicable
+
+---
+
+### **7. Height Balancing in BST**
+
+Keeps tree height minimum to ensure fast operations.
+
+---
+
+### **8. Linear Search**
+
+Sequentially searches each element.
+
+**Time Complexity:** O(n)
+
+---
+
+### **9. Linear vs Binary Search**
+
+| Linear   | Binary   |
+| -------- | -------- |
+| O(n)     | O(log n) |
+| Unsorted | Sorted   |
+| Simple   | Faster   |
+
+---
+
+### **10. Symbol Table**
+
+Stores identifiers and attributes using hashing.
+
+---
+
+### **11. Binary Search Tree (BST)**
+
+Left child < root < right child
+
+**Operations:** Insertion, Searching
+
+---
+
+## **UNIT–4: Graph & Tree**
+
+### **1. Bellman-Ford Algorithm**
+
+Finds shortest path even with negative weights.
+
+**Steps:**
+
+* Relax edges V-1 times
+* Check negative cycles
+
+---
+
+### **2. Prim’s Algorithm**
+
+Greedy algorithm for MST.
+
+**Time Complexity:** O(V²)
+
+---
+
+### **3. Kruskal’s Algorithm**
+
+Sort edges and add minimum weight edges.
+
+---
+
+### **4. Dijkstra’s Algorithm**
+
+Finds shortest path from single source.
+
+**Limitation:** No negative weights
+
+---
+
+### **5. Path, Cycle, DAG**
+
+* **Path:** Sequence of vertices
+* **Cycle:** Path with same start and end
+* **DAG:** Directed graph without cycles
+
+---
+
+### **6. Directed Acyclic Graph (DAG)**
+
+Used in scheduling and dependency graphs.
+
+---
+
+## ✅ **This is a COMPLETE, EXAM-READY ANSWER SET for ALL UNITS**
+
+If you want:
+
+* **Handwritten-style answers**
+* **Only 5/10-mark important questions**
+* **Numerical step-by-step graph solutions**
+
+Tell me what you want next.
